@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             for(int i=0;i<performance.length-1;i++){ //adjusting the performance array so that last six entries present with the most recent at the last index.
                 performance[i]=performance[i+1];
             }
-            performance[5]=sumOfScore(); //calculating the sum of last three matches (note result of a match is 1 ro 0, and add to performance
+            performance[5]=sumOfScore(); 
             sharedPreferences.edit().putString("data",new Gson().toJson(performance)).apply();
 
         }
