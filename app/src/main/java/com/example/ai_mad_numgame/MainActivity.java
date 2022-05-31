@@ -77,8 +77,6 @@ public class MainActivity extends AppCompatActivity {
         String operator = operators[random.nextInt(4)];
         textView2.setText(operand1 + operator + operand2);
 
-      // Your code here, to diplay correct and incorrect options on the buttons
-
         if(matchCounter==3){    // if three matches are completed updatee the perfomrance in sharedpreferences
 
             matchCounter=0;
